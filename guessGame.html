@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./guessGame.css" />
+    <title>Taylor Swift's Song Guessing</title>
+  </head>
+  <body>
+    <!-- top -->
+    <div class="container">
+      <div class="col-lg-12 text-center">
+        <header><img src="./assets/img/bg.jpeg" alt="" /></header>
+      </div>
+    </div>
+    <!-- left -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="box1">
+            <div class="albumncover">
+              <img id="pic" />
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="col-lg-6">
+          <div class="box2">
+            <div class="songguess">
+              <h1 class="text-center">Guess What Song It Is?</h1>
+              <hr />
+              <h3 class="text-center">Press any key to get started!</h3>
+              <hr />
+              <div class="wins text-center">
+                Wins:<span id="winTimes"></span>
+              </div>
+              <hr />
+              <div class="word text-center">
+                Current Song
+                <div id="guess"></div>
+              </div>
+              <hr />
+              <div class="remaining text-center">
+                Remaining Words<span id="remainingGuesses"></span>
+              </div>
+              <hr />
+              <div class="letters text-center">
+                Letters Already Guessed!<span id="alreadyGuessedLetters"></span>
+              </div>
+              <hr />
+              <button type="button" onclick="reset()" class="btn btn-light">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./guessWord.js"></script>
+  </body>
+</html>

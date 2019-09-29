@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  pad: 0;
+}
+
+body {
+  background-color: rgb(255, 240, 247);
+}
+header {
+  /* border: 1px solid saddlebrown; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.col-lg-6 {
+  padding: 0;
+  margin: 0;
+}
+.box1,
+.box2 {
+  /* border: 1px solid seagreen; */
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box1 .albumncover {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  border: 1px solid sienna;
+  align-self: center;
+}
+
+.songguess {
+  margin-top: 7%;
+  color: rgb(165, 42, 69);
+  font-family: "Dosis", sans-serif;
+}
+
+hr {
+  background-color: rgb(255, 217, 223);
+}
+.btn {
+  background-color: rgb(199, 50, 75);
+  color: aliceblue;
+  margin: auto;
+  display: flex;
+}
